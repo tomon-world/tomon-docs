@@ -17,7 +17,7 @@ module.exports = {
     repo: 'tomon-world/tomon-docs',
     logo: '/logo.png',
     editLinks: true,
-    docsDir: 'src',
+    docsDir: 'docs',
     editLinkText: '在GitHub上编辑此页',
     lastUpdated: '上次更新',
     nav: [

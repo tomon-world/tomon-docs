@@ -99,7 +99,13 @@ function getAdvancedSidebar() {
     {
       title: '进阶',
       collapsable: false,
-      children: ['', 'socket', 'permissions'],
+      children: ['', 'socket', 'permissions', 'structure'],
     },
+    // {
+    //   title: '数据定义',
+    //   collapsable: false,
+    //   children: ['structure'],
+    //   initialOpenGroupIndex: -1,
+    // },
   ];
 }

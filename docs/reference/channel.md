@@ -51,13 +51,13 @@
 
 ### 获取频道
 
-<api method="GET" path="/channels/{channelId}" />
+<Api>GET /channels/{channelId}</Api>
 
 获取频道信息
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus>200</HttpStatus>
 
 ```json
 {

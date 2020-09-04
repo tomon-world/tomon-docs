@@ -34,7 +34,7 @@ payload 在不同事件下，对应的数据不同。具体可以参看[dispatch
 
 ### ⚠️ 特殊说明
 
-目前 gateway 传输的数据类型还存在一些问题，无法有效将 optional 的数据在空数据时表示为`null`。我们会尽快纠正这个问题。
+目前 gateway 传输的数据类型还存在一些问题，无法有效将 optional 的数据在空数据时表示为 `null`。我们会尽快纠正这个问题。
 
 ## 操作码
 
@@ -51,35 +51,35 @@ payload 在不同事件下，对应的数据不同。具体可以参看[dispatch
 
 群组和聊天相关的事件分发，事件类型有：
 
-| 名称                          | 描述             | payload 内容                                 |
-| ----------------------------- | ---------------- | -------------------------------------------- |
-| `GUILD_CREATE`                | 创建或加入群组   | [群组信息](./guild#数据定义)                 |
-| `GUILD_DELETE`                | 删除或离开群组   | [群组信息](./guild#数据定义)                 |
-| `GUILD_UPDATE`                | 群组更新         | [群组信息](./guild#数据定义)                 |
-| `GUILD_POSITION`              | 群组位置变化     | _稍后给出定义_                               |
-| `CHANNEL_CREATE`              | 新建频道         | [频道信息](./channel#数据定义)               |
-| `CHANNEL_DELETE`              | 删除频道         | [频道信息](./channel#数据定义)               |
-| `CHANNEL_UPDATE`              | 频道更新         | [频道信息](./channel#数据定义)               |
-| `CHANNEL_POSITION`            | 频道位置变化     | _稍后给出定义_                               |
-| `GUILD_ROLE_CREATE`           | 新建群组角色     | [角色信息](./role#数据定义)                  |
-| `GUILD_ROLE_DELETE`           | 删除群组角色     | [角色信息](./role#数据定义)                  |
-| `GUILD_ROLE_UPDATE`           | 群组角色更新     | [角色信息](./role#数据定义)                  |
-| `GUILD_ROLE_POSITION`         | 群组角色位置变化 | _稍后给出定义_                               |
-| `GUILD_MEMBER_ADD`            | 新增群组成员     | [群组成员信息](./guild#群组成员guild-member) |
-| `GUILD_MEMBER_REMOVE`         | 删除群组成员     | [群组成员信息](./guild#群组成员guild-member) |
-| `GUILD_MEMBER_UPDATE`         | 群组成员更新     | [群组成员信息](./guild#群组成员guild-member) |
-| `MESSAGE_CREATE`              | 新建消息         | [消息信息](./message#数据定义)               |
-| `MESSAGE_DELETE`              | 删除消息         | [消息信息](./message#数据定义)               |
-| `MESSAGE_UPDATE`              | 消息更新         | [消息信息](./message#数据定义)               |
-| `MESSAGE_REACTION_ADD`        | 增加消息反应     | _稍后给出定义_                               |
-| `MESSAGE_REACTION_REMOVE`     | 删除消息反应     | _稍后给出定义_                               |
-| `MESSAGE_REACTION_REMOVE_ALL` | 删除所有消息反应 | _稍后给出定义_                               |
-| `EMOJI_CREATE`                | 新建群组 Emoji   | [Emoji 信息](./emoji#数据定义)               |
-| `EMOJI_DELETE`                | 删除群组 Emoji   | [Emoji 信息](./emoji#数据定义)               |
-| `EMOJI_UPDATE`                | 群组 Emoji 更新  | [Emoji 信息](./emoji#数据定义)               |
-| `VOICE_STATE_UPDATE`          | 语音状态更新     | _稍后给出定义_                               |
-| `USER_TYPING`                 | 打字状态         | _稍后给出定义_                               |
-| `USER_PRESENCE_UPDATE`        | 在线状态更新     | _稍后给出定义_                               |
+| 名称                          | 描述             | payload 内容                            |
+| ----------------------------- | ---------------- | --------------------------------------- |
+| `GUILD_CREATE`                | 创建或加入群组   | [群组信息](./structure.html#guild)      |
+| `GUILD_DELETE`                | 删除或离开群组   | [群组信息](./structure.html#guild)      |
+| `GUILD_UPDATE`                | 群组更新         | [群组信息](./structure.html#guild)      |
+| `GUILD_POSITION`              | 群组位置变化     | _稍后给出定义_                          |
+| `CHANNEL_CREATE`              | 新建频道         | [频道信息](./structure.html#channel)    |
+| `CHANNEL_DELETE`              | 删除频道         | [频道信息](./structure.html#channel)    |
+| `CHANNEL_UPDATE`              | 频道更新         | [频道信息](./structure.html#channel)    |
+| `CHANNEL_POSITION`            | 频道位置变化     | _稍后给出定义_                          |
+| `GUILD_ROLE_CREATE`           | 新建群组角色     | [角色信息](../structure.html#role)      |
+| `GUILD_ROLE_DELETE`           | 删除群组角色     | [角色信息](../structure.html#role)      |
+| `GUILD_ROLE_UPDATE`           | 群组角色更新     | [角色信息](../structure.html#role)      |
+| `GUILD_ROLE_POSITION`         | 群组角色位置变化 | _稍后给出定义_                          |
+| `GUILD_MEMBER_ADD`            | 新增群组成员     | [群组成员信息](./structure.html#member) |
+| `GUILD_MEMBER_REMOVE`         | 删除群组成员     | [群组成员信息](./structure.html#member) |
+| `GUILD_MEMBER_UPDATE`         | 群组成员更新     | [群组成员信息](./structure.html#member) |
+| `MESSAGE_CREATE`              | 新建消息         | [消息信息](./structure.html#message)    |
+| `MESSAGE_DELETE`              | 删除消息         | [消息信息](./structure.html#message)    |
+| `MESSAGE_UPDATE`              | 消息更新         | [消息信息](./structure.html#message)    |
+| `MESSAGE_REACTION_ADD`        | 增加消息反应     | _稍后给出定义_                          |
+| `MESSAGE_REACTION_REMOVE`     | 删除消息反应     | _稍后给出定义_                          |
+| `MESSAGE_REACTION_REMOVE_ALL` | 删除所有消息反应 | _稍后给出定义_                          |
+| `EMOJI_CREATE`                | 新建群组 Emoji   | [Emoji 信息](./structure.html#emoji)    |
+| `EMOJI_DELETE`                | 删除群组 Emoji   | [Emoji 信息](./structure.html#emoji)    |
+| `EMOJI_UPDATE`                | 群组 Emoji 更新  | [Emoji 信息](./structure.html#emoji)    |
+| `VOICE_STATE_UPDATE`          | 语音状态更新     | _稍后给出定义_                          |
+| `USER_TYPING`                 | 打字状态         | _稍后给出定义_                          |
+| `USER_PRESENCE_UPDATE`        | 在线状态更新     | _稍后给出定义_                          |
 
 ### HEARTBEAT
 

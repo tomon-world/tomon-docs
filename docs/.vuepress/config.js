@@ -3,9 +3,10 @@ const { description } = require('../../package');
 module.exports = {
   title: 'Tomon 开发者中心',
   description: description,
+  base: '/tomon-docs/',
   head: [
-    ['link', { rel: 'icon', href: '/logo.png' }],
-    ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/assets/logo.png' }],
+    ['link', { rel: 'shortcut icon', href: '/assets/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     [
@@ -15,7 +16,7 @@ module.exports = {
   ],
   themeConfig: {
     repo: 'tomon-world/tomon-docs',
-    logo: '/logo.png',
+    logo: '/assets/logo.png',
     editLinks: true,
     docsDir: 'docs',
     editLinkText: '在GitHub上编辑此页',

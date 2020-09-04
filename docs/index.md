@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /assets/logo.png
 tagline:
 actionText: 开始 ヾ(๑╹ヮ╹๑)ﾉ”
 actionLink: /overview/

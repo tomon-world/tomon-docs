@@ -3,7 +3,6 @@ const { description } = require('../../package');
 module.exports = {
   title: 'Tomon 开发者中心',
   description: description,
-  base: '/tomon-docs/',
   head: [
     ['link', { rel: 'icon', href: '/assets/logo.png' }],
     ['link', { rel: 'shortcut icon', href: '/assets/favicon.ico' }],

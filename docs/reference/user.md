@@ -19,6 +19,7 @@
 | `phone`          | `number`    | required | 用户手机号           |
 | `phone_verified` | `bool`      | required | 用户手机号是否已验证 |
 | `banned`         | `bool`      | required | 用户是否被封禁       |
+| `activated`      | `bool`      | required | 用户是否已激活       |
 
 ### 查看个人资料
 

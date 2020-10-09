@@ -17,13 +17,13 @@
 
 ### 列出群组 Emoji
 
-<api method="GET" path="/guilds/{guildId}/emojis" />
+<Api method="GET" path="/guilds/{guildId}/emojis" />
 
 列出群组内现在使用的 Emoji
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 [
@@ -52,13 +52,13 @@
 
 ### 取出一个 Emoji
 
-<api method="GET" path="/guilds/{guildId}/emojis/{emojiId}" />
+<Api method="GET" path="/guilds/{guildId}/emojis/{emojiId}" />
 
 取出群组内的一个 Emoji 的相关信息
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 {
@@ -85,7 +85,7 @@
 
 ### 添加 Emoji
 
-<api method="POST" path="/guilds/{guildId}/emojis" />
+<Api method="POST" path="/guilds/{guildId}/emojis" />
 
 向指定的群组内添加一个 Emoji
 
@@ -105,13 +105,13 @@
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 参见[数据定义](#数据定义)
 
 ### 更新 Emoji
 
-<api method="PATCH" path="/guilds/{guildId}/emojis/{emojiId}" />
+<Api method="PATCH" path="/guilds/{guildId}/emojis/{emojiId}" />
 
 更新一个 Emoji 的名称
 
@@ -125,16 +125,16 @@
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 参见[数据定义](#数据定义)
 
 ### 移除 Emoji
 
-<api method="DELETE" path="/guilds/{guildId}/emojis/{emojiId}" />
+<Api method="DELETE" path="/guilds/{guildId}/emojis/{emojiId}" />
 
 移除一个指定的 Emoji
 
 #### 返回
 
-- <httpstatus code="204" /> 无内容
+- <HttpStatus code="204" /> 无内容

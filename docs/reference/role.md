@@ -34,13 +34,13 @@
 
 ### 获取群组所有角色
 
-<api method="GET" path="/guilds/{guildId}/roles" />
+<Api method="GET" path="/guilds/{guildId}/roles" />
 
 获取群组的所有角色。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -79,7 +79,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 创建群组角色
 
-<api method="POST" path="/guilds/{guildId}/roles" />
+<Api method="POST" path="/guilds/{guildId}/roles" />
 
 创建群组角色。
 
@@ -97,7 +97,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -114,17 +114,17 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 删除群组角色
 
-<api method="DELETE" path="/guilds/{guildId}/roles/{roleId}" />
+<Api method="DELETE" path="/guilds/{guildId}/roles/{roleId}" />
 
 删除群组角色。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 修改群组角色
 
-<api method="PATCH" path="/guilds/{guildId}/roles/{roleId}" />
+<Api method="PATCH" path="/guilds/{guildId}/roles/{roleId}" />
 
 修改群组角色。
 
@@ -145,7 +145,7 @@ HTTP 状态码：<httpstatus code="204" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -162,20 +162,20 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 给群组成员添加角色
 
-<api method="PUT" path="/guilds/{guildId}/members/{userId}/roles/{roleId}" />
+<Api method="PUT" path="/guilds/{guildId}/members/{userId}/roles/{roleId}" />
 
 给群组成员添加角色。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 从群组成员移除角色
 
-<api method="DELETE" path="/guilds/{guildId}/members/{userId}/roles/{roleId}" />
+<Api method="DELETE" path="/guilds/{guildId}/members/{userId}/roles/{roleId}" />
 
 从群组成员移除角色。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />

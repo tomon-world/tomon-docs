@@ -50,13 +50,13 @@
 
 ### 列出邀请信息
 
-<api method="GET" path="/channels/{channelId}/invites" />
+<Api method="GET" path="/channels/{channelId}/invites" />
 
 列出一个频道的所有邀请。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -89,7 +89,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 新增邀请
 
-<api method="POST" path="/channels/{channelId}/invites" />
+<Api method="POST" path="/channels/{channelId}/invites" />
 
  创建邀请。
 
@@ -108,7 +108,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -139,23 +139,23 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 删除邀请
 
-<api method="DELETE" path="/invites/{inviteCode}" />
+<Api method="DELETE" path="/invites/{inviteCode}" />
 
 删除邀请
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ## 使用邀请
 
 ### 获取邀请信息
 
-<api method="GET" path="/invites/{inviteCode}" />
+<Api method="GET" path="/invites/{inviteCode}" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -186,13 +186,13 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 接收邀请
 
-<api method="POST" path="/invites/{inviteCode}" />
+<Api method="POST" path="/invites/{inviteCode}" />
 
 接收邀请，如果已经加入也会正常返回结果。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 返回群组信息。
 

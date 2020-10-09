@@ -31,7 +31,7 @@
 
 ### 添加表情
 
-<api method="POST" path="/stamps" />
+<Api method="POST" path="/stamps" />
 
 `multipart/form-data`
 
@@ -57,7 +57,7 @@
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 [
@@ -79,11 +79,11 @@
 
 ### 列出表情
 
-<api method="GET" path="/stamps/{stampId}" />
+<Api method="GET" path="/stamps/{stampId}" />
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 {
@@ -103,7 +103,7 @@
 
 ### 更新表情
 
-<api method="PATCH" path="/stamps/{stampId}" />
+<Api method="PATCH" path="/stamps/{stampId}" />
 
 请求：
 
@@ -116,17 +116,17 @@
 
 #### 返回
 
-- <httpstatus code="204" /> 无内容
+- <HttpStatus code="204" /> 无内容
 
 ### 删除表情
 
-<api method="DELETE" path="/stamps/{stampId}" />
+<Api method="DELETE" path="/stamps/{stampId}" />
 
 请求:(空)
 
 #### 返回
 
-- <httpstatus code="204" /> 无内容
+- <HttpStatus code="204" /> 无内容
 
 ---
 
@@ -134,7 +134,7 @@
 
 ### 列出表情包
 
-<api method="GET" path="/stamps/{stampId}" />
+<Api method="GET" path="/stamps/{stampId}" />
 
 `{stampId}`接受两种参数：
 
@@ -145,7 +145,7 @@
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 {

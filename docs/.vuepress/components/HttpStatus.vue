@@ -1,19 +1,14 @@
 <script>
 export default {
+  name: 'HttpStatus',
   functional: true,
   props: {
-    type: {
+    code: {
       type: String,
-      default: 'tip',
-    },
-    text: String,
-    vertical: {
-      type: String,
-      default: 'top',
     },
   },
-  render(h, { props, slots }) {
-    const { text } = slots().default[0];
+  render(h, { props }) {
+    const { code: text } = props;
     let color = 'none';
     if (text.startsWith('2')) {
       color = '#08B162AA';

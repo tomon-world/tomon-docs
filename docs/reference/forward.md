@@ -61,7 +61,7 @@
 
 ### 获取一条转发消息
 
-<api method="GET" path="/forwards/{forwardId}" />
+<Api method="GET" path="/forwards/{forwardId}" />
 
 获取一条转发消息
 

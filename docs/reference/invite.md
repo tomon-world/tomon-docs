@@ -26,7 +26,10 @@
     "name": "bears🍻",
     "member_count": 1,
     "icon": "f3ae596c9234d1b5a14c5a1658a55331.png",
-    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png"
+    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png",
+    "background": null,
+    "background_url": null,
+    "background_props": null
   },
   "channel": { "id": "136412396142460928", "name": "庆祝", "type": 0 },
   "inviter": {
@@ -36,13 +39,14 @@
     "avatar": "5d3ca10119f069727fe3b6ddd0998296.png",
     "name": "monoceros",
     "avatar_url": "https://cdn.tomon.co/avatars/5d3ca10119f069727fe3b6ddd0998296.png",
-    "type": 0
+    "type": 0,
+    "is_bot": false
   },
   "uses": 0,
-  "created_at": "2020-06-12T11:02:52.723Z",
   "max_age": 86400,
   "max_uses": 0,
-  "temporary": false
+  "temporary": false,
+  "joined": false
 }
 ```
 
@@ -50,13 +54,13 @@
 
 ### 列出邀请信息
 
-<api method="GET" path="/channels/{channelId}/invites" />
+<Api method="GET" path="/channels/{channelId}/invites" />
 
 列出一个频道的所有邀请。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -67,7 +71,10 @@ HTTP 状态码：<httpstatus code="200" />
       "name": "bears🍻",
       "member_count": null,
       "icon": "f3ae596c9234d1b5a14c5a1658a55331.png",
-      "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png"
+      "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png",
+      "background": null,
+      "background_url": null,
+      "background_props": null
     },
     "channel": { "id": "136412396142460928", "name": "庆祝", "type": 0 },
     "inviter": {
@@ -77,19 +84,21 @@ HTTP 状态码：<httpstatus code="200" />
       "avatar": "5d3ca10119f069727fe3b6ddd0998296.png",
       "name": "monoceros",
       "avatar_url": "https://cdn.tomon.co/avatars/5d3ca10119f069727fe3b6ddd0998296.png",
-      "type": 0
+      "type": 0,
+      "is_bot": false
     },
     "uses": 0,
     "max_age": 86400,
     "max_uses": 0,
-    "temporary": false
+    "temporary": false,
+    "joined": false
   }
 ]
 ```
 
 ### 新增邀请
 
-<api method="POST" path="/channels/{channelId}/invites" />
+<Api method="POST" path="/channels/{channelId}/invites" />
 
  创建邀请。
 
@@ -108,7 +117,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -118,7 +127,10 @@ HTTP 状态码：<httpstatus code="200" />
     "name": "bears🍻",
     "member_count": 1,
     "icon": "f3ae596c9234d1b5a14c5a1658a55331.png",
-    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png"
+    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png",
+    "background": "",
+    "background_props": "",
+    "background_url": ""
   },
   "channel": { "id": "136455413704466432", "name": "abc", "type": 0 },
   "inviter": {
@@ -128,34 +140,36 @@ HTTP 状态码：<httpstatus code="200" />
     "avatar": "5d3ca10119f069727fe3b6ddd0998296.png",
     "name": "monoceros",
     "avatar_url": "https://cdn.tomon.co/avatars/5d3ca10119f069727fe3b6ddd0998296.png",
-    "type": 0
+    "type": 0,
+    "is_bot": false
   },
   "uses": 0,
   "max_age": 86400,
   "max_uses": 0,
-  "temporary": false
+  "temporary": false,
+  "joined": false
 }
 ```
 
 ### 删除邀请
 
-<api method="DELETE" path="/invites/{inviteCode}" />
+<Api method="DELETE" path="/invites/{inviteCode}" />
 
 删除邀请
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ## 使用邀请
 
 ### 获取邀请信息
 
-<api method="GET" path="/invites/{inviteCode}" />
+<Api method="GET" path="/invites/{inviteCode}" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -165,7 +179,10 @@ HTTP 状态码：<httpstatus code="200" />
     "name": "bears🍻",
     "member_count": 1,
     "icon": "f3ae596c9234d1b5a14c5a1658a55331.png",
-    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png"
+    "icon_url": "https://cdn.tomon.co/icons/f3ae596c9234d1b5a14c5a1658a55331.png",
+    "background": "",
+    "background_props": "",
+    "background_url": ""
   },
   "channel": { "id": "136455413704466432", "name": "abc", "type": 0 },
   "inviter": {
@@ -175,24 +192,26 @@ HTTP 状态码：<httpstatus code="200" />
     "avatar": "5d3ca10119f069727fe3b6ddd0998296.png",
     "name": "monoceros",
     "avatar_url": "https://cdn.tomon.co/avatars/5d3ca10119f069727fe3b6ddd0998296.png",
-    "type": 0
+    "type": 0,
+    "is_bot": false
   },
   "uses": 0,
   "max_age": 86400,
   "max_uses": 0,
-  "temporary": false
+  "temporary": false,
+  "joined": false
 }
 ```
 
 ### 接收邀请
 
-<api method="POST" path="/invites/{inviteCode}" />
+<Api method="POST" path="/invites/{inviteCode}" />
 
 接收邀请，如果已经加入也会正常返回结果。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 返回群组信息。
 

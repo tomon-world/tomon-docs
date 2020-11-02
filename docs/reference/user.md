@@ -19,10 +19,11 @@
 | `phone`          | `number`    | required | 用户手机号           |
 | `phone_verified` | `bool`      | required | 用户手机号是否已验证 |
 | `banned`         | `bool`      | required | 用户是否被封禁       |
+| `activated`      | `bool`      | required | 用户是否已激活       |
 
 ### 查看个人资料
 
-<api method="GET" path="/users/@me" />
+<Api method="GET" path="/users/@me" />
 
 列出用户个人资料
 
@@ -48,7 +49,7 @@
 
 ### 编辑个人资料
 
-<api method="PATCH" path="/users/@me" />
+<Api method="PATCH" path="/users/@me" />
 
 编辑用户个人资料
 
@@ -70,10 +71,10 @@
 
 参考 [数据定义](#数据定义)
 
-- <httpstatus code="200" /> 成功返回
-- <httpstatus code="400" /> 用户名/邮箱冲突
-- <httpstatus code="401" /> 密码错误
-- <httpstatus code="422" /> 参数错误
+- <HttpStatus code="200" /> 成功返回
+- <HttpStatus code="400" /> 用户名/邮箱冲突
+- <HttpStatus code="401" /> 密码错误
+- <HttpStatus code="422" /> 参数错误
 
 ---
 
@@ -81,7 +82,7 @@
 
 ### 群组列表
 
-<api method="GET" path="/users/@me/guilds" />
+<Api method="GET" path="/users/@me/guilds" />
 
 列出当前加入的工会
 
@@ -113,11 +114,11 @@
 
 详细字段参考 [群组数据定义](guild#数据定义)
 
-- <httpstatus code="200" /> 成功返回
+- <HttpStatus code="200" /> 成功返回
 
 ### 群组排序
 
-<api method="PATCH" path="/users/@me/guilds" />
+<Api method="PATCH" path="/users/@me/guilds" />
 
 对用户个人的群组侧边栏进行排序
 
@@ -145,17 +146,17 @@
 
 参考 [用户数据定义](#数据定义)
 
-- <httpstatus code="200" /> 成功返回
+- <HttpStatus code="200" /> 成功返回
 
 ### 离开工会
 
-<api method="DELETE" path="/users/@me/guilds/{guildId}" />
+<Api method="DELETE" path="/users/@me/guilds/{guildId}" />
 
 其中`{guildId}`为工会 ID
 
 #### 返回
 
-- <httpstatus code="204" /> 无返回内容
+- <HttpStatus code="204" /> 无返回内容
 
 ---
 
@@ -175,13 +176,13 @@
 
 ### 获取私聊频道
 
-<api method="GET" path="/users/@me/channels" />
+<Api method="GET" path="/users/@me/channels" />
 
 获取全部的私聊频道
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 ```json
 [
@@ -213,7 +214,7 @@
 
 ### 创建私聊频道
 
-<api method="POST" path="/users/@me/channels" />
+<Api method="POST" path="/users/@me/channels" />
 
 创建一个私聊频道
 
@@ -229,7 +230,7 @@
 
 #### 返回
 
-- <httpstatus code="200" />
+- <HttpStatus code="200" />
 
 \*返回内容参照上述
 
@@ -239,7 +240,7 @@
 
 ### 工会设置
 
-<api method="PATCH" path="/users/@me/guilds/@me/settings" />
+<Api method="PATCH" path="/users/@me/guilds/@me/settings" />
 
 ## 邀请码
 
@@ -260,7 +261,7 @@
 
 ### 列出邀请码
 
-<api method="GET" path="/users/@me/tickets" />
+<Api method="GET" path="/users/@me/tickets" />
 
 #### 返回
 
@@ -289,15 +290,15 @@
 ]
 ```
 
-- <httpstatus code="200" /> 如上
+- <HttpStatus code="200" /> 如上
 
 ### 创建邀请码
 
-<api method="POST" path="/users/@me/tickets" />
+<Api method="POST" path="/users/@me/tickets" />
 
 \*注：如果本周内创建过，则返回本周之内创建的邀请码
 
-- <httpstatus code="200" /> 格式如上
+- <HttpStatus code="200" /> 格式如上
 
 ---
 
@@ -314,7 +315,7 @@
 
 ### 表情包列表
 
-<api method="GET" path="/users/@me/stamppacks" />
+<Api method="GET" path="/users/@me/stamppacks" />
 
 列出我使用的表情包
 
@@ -338,7 +339,7 @@
 
 ### 使用表情包
 
-<api method="PUT" path="/users/@me/stamppacks/{stampPackId}" />
+<Api method="PUT" path="/users/@me/stamppacks/{stampPackId}" />
 
 使用一个表情包
 
@@ -348,11 +349,11 @@
 
 #### 返回
 
-- <httpstatus code="204" /> 无内容
+- <HttpStatus code="204" /> 无内容
 
 ### 移除一个表情包
 
-<api method="PUT" path="/users/@me/stamppacks/{stampPackId}" />
+<Api method="PUT" path="/users/@me/stamppacks/{stampPackId}" />
 
 从个人表情包列表内移除一个表情包
 
@@ -362,7 +363,7 @@
 
 #### 返回
 
-- <httpstatus code="204" /> 无内容
+- <HttpStatus code="204" /> 无内容
 
 ---
 
@@ -383,7 +384,7 @@
 
 ### 新增举报
 
-<api method="POST" path="/users/@me/reports" />
+<Api method="POST" path="/users/@me/reports" />
 
 范例：
 

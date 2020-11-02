@@ -51,13 +51,13 @@
 
 ### 获取频道
 
-<Api>GET /channels/{channelId}</Api>
+<Api method="GET" path="/channels/{channelId" />
 
 获取频道信息
 
 #### 响应
 
-HTTP 状态码：<HttpStatus>200</HttpStatus>
+HTTP 状态码：<HttpStatus code="200">
 
 ```json
 {
@@ -77,7 +77,7 @@ HTTP 状态码：<HttpStatus>200</HttpStatus>
 
 ### 修改频道
 
-<api method="PATCH" path="/channels/{channelId}" />
+<Api method="PATCH" path="/channels/{channelId}" />
 
 修改频道信息
 
@@ -98,7 +98,7 @@ HTTP 状态码：<HttpStatus>200</HttpStatus>
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -120,20 +120,20 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 删除频道
 
-<api method="DELETE" path="/channels/{channelId}" />
+<Api method="DELETE" path="/channels/{channelId}" />
 
 删除频道，群组频道需要有管理频道的权限。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 同步频道打字状态
 
-<api method="POST" path="/channels/{channelId}/typing" />
+<Api method="POST" path="/channels/{channelId}/typing" />
 
 同步其他客户端自己正在输入的状态。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />

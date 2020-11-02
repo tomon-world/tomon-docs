@@ -2,24 +2,15 @@
   <div class="api">
     <code>
       <span :class="method.toLowerCase()">{{ method.toUpperCase() }}</span>
-      <span>{{ route }}</span>
+      <span>{{ path }}</span>
     </code>
   </div>
 </template>
 
 <script>
 export default {
+  props: ['method', 'path'],
   name: 'Api',
-  computed: {
-    method() {
-      const { text } = this.$slots.default[0];
-      return text.split(' ')[0];
-    },
-    route() {
-      const { text } = this.$slots.default[0];
-      return text.split(' ')[1];
-    },
-  },
 };
 </script>
 

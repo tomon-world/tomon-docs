@@ -119,6 +119,7 @@ enum ChannelTypes {
 
 | 字段          | 描述            | 类型                        |
 | ------------- | --------------- | --------------------------- |
+| activated     | 是否已激活      | boolean                     |
 | avatar        | 图片文件名      | string                      |
 | avatar_url    | 图片地址        | string                      |
 | created_at    | 创建时间        | string(ISO string) \| null  |

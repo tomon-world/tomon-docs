@@ -79,6 +79,7 @@ function getReferenceSidebar() {
         'stamp',
         'invite',
         'voice',
+        'cbt-application',
       ],
     },
   ];

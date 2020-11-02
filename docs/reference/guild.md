@@ -81,13 +81,13 @@
 
 ### 获取群组信息
 
-<api method="GET" path="/guilds/{guildId}" />
+<Api method="GET" path="/guilds/{guildId}" />
 
 获取群组信息
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -112,7 +112,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 创建群组
 
-<api method="POST" path="/guilds" />
+<Api method="POST" path="/guilds" />
 
 创建群组
 
@@ -150,7 +150,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -175,7 +175,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 修改群组
 
-<api method="PATCH" path="/guilds/{guildId}" />
+<Api method="PATCH" path="/guilds/{guildId}" />
 
 修改群组属性
 
@@ -188,21 +188,21 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 删除群组
 
-<api method="DELETE" path="/guilds/{guildId}" />
+<Api method="DELETE" path="/guilds/{guildId}" />
 
 删除群组，即解散群组。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 离开群组
 
-<api method="DELETE" path="/@me/guilds/{guildId}" />
+<Api method="DELETE" path="/@me/guilds/{guildId}" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ---
 
@@ -210,13 +210,13 @@ HTTP 状态码：<httpstatus code="204" />
 
 ### 获取群组所有频道
 
-<api method="GET" path="/guilds/{guildId}/channels" />
+<Api method="GET" path="/guilds/{guildId}/channels" />
 
 获取群组的所有频道。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -265,7 +265,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 创建群组频道
 
-<api method="POST" path="/guilds/{guildId}/channels" />
+<Api method="POST" path="/guilds/{guildId}/channels" />
 
 在指定群组创建频道。
 
@@ -290,7 +290,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -310,7 +310,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 修改群组频道顺序
 
-<api method="PATCH" path="/guilds/{guildId}/channels" />
+<Api method="PATCH" path="/guilds/{guildId}/channels" />
 
 #### JSON 参数
 
@@ -341,7 +341,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ---
 
@@ -349,13 +349,13 @@ HTTP 状态码：<httpstatus code="204" />
 
 ### 获取全部群组成员
 
-<api method="GET" path="/guilds/{guildId}/members" />
+<Api method="GET" path="/guilds/{guildId}/members" />
 
 获取所有群组成员（WIP）
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -382,13 +382,13 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 获取单个群组成员信息
 
-<api method="GET" path="/guilds/{guildId}/members/{userId}" />
+<Api method="GET" path="/guilds/{guildId}/members/{userId}" />
 
 获取特定成员的信息
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -413,27 +413,27 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 添加群组成员
 
-<api method="PUT" path="/guilds/{guildId}/members/{userId}" />
+<Api method="PUT" path="/guilds/{guildId}/members/{userId}" />
 
 将用户加入到群组，要求有管理群组的权限。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 移除群组成员
 
-<api method="DELETE" path="/guilds/{guildId}/members/{userId}" />
+<Api method="DELETE" path="/guilds/{guildId}/members/{userId}" />
 
 将用户从群组移除，要求有管理群组的权限。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 修改群组成员
 
-<api method="PATCH" path="/guilds/{guildId}/members/{userId}" />
+<Api method="PATCH" path="/guilds/{guildId}/members/{userId}" />
 
 修改群组成员的信息，暂时只用于修改昵称。
 
@@ -451,7 +451,7 @@ HTTP 状态码：<httpstatus code="204" />
 
 ### 修改我的群昵称
 
-<api method="PATCH" path="/guilds/{guildId}/members/@me/nick" />
+<Api method="PATCH" path="/guilds/{guildId}/members/@me/nick" />
 
 #### JSON 参数
 

@@ -99,7 +99,7 @@
 
 ### 获取频道消息列表
 
-<api method="GET" path="/channels/{channelId}/messages" />
+<Api method="GET" path="/channels/{channelId}/messages" />
 
 获取频道消息列表，需要有查看历史消息权限。
 
@@ -114,7 +114,7 @@
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -172,13 +172,13 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 获取频道单条消息
 
-<api method="GET" path="/channels/{channelId}/messages/{messageId}" />
+<Api method="GET" path="/channels/{channelId}/messages/{messageId}" />
 
 获取频道内的一条消息，需要有查看历史消息权限。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -208,7 +208,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 发送消息
 
-<api method="POST" path="/channels/{channelId}/messages" />
+<Api method="POST" path="/channels/{channelId}/messages" />
 
 发送消息，支持发送文件（图片）。发送后 websocket 仍然会收到此条发送的消息，需要客户端根据`nonce`字段去重。
 
@@ -237,7 +237,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -279,7 +279,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 修改消息
 
-<api method="PATCH" path="/channels/{channelId}/messages/{messageId}" />
+<Api method="PATCH" path="/channels/{channelId}/messages/{messageId}" />
 
 修改消息，只能修改自己发送的消息
 
@@ -291,7 +291,7 @@ HTTP 状态码：<httpstatus code="200" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 {
@@ -321,13 +321,13 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 删除消息
 
-<api method="DELETE" path="/channels/{channelId}/messages/{messageId}" />
+<Api method="DELETE" path="/channels/{channelId}/messages/{messageId}" />
 
 删除消息，可以删除自己的消息，如果有消息管理权限，可以删除其他人的消息。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ---
 
@@ -335,37 +335,37 @@ HTTP 状态码：<httpstatus code="204" />
 
 ### 添加反应
 
-<api method="PUT" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/@me" />
+<Api method="PUT" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/@me" />
 
 给消息添加反应。如果是群组自定义 Emoji，则`emojiId`填写`name:id`，如果是系统 Emoji，则`emojiId`填写 Emoji 字符
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 删除反应
 
-<api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/@me" />
+<Api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/@me" />
 
 删除消息的反应。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 删除用户的反应
 
-<api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/{userId}" />
+<Api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}/{userId}" />
 
 删除指定用户的反应。需要有管理消息的权限。
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 获取添加反应的用户列表
 
-<api method="GET" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}" />
+<Api method="GET" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}" />
 
 获取添加反应的用户列表。
 
@@ -379,7 +379,7 @@ HTTP 状态码：<httpstatus code="204" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -400,13 +400,13 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 清除反应
 
-<api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}" />
+<Api method="DELETE" path="/channels/{channelId}/messages/{messageId}/reactions/{emojiId}" />
 
 清除某个反应
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ---
 
@@ -414,7 +414,7 @@ HTTP 状态码：<httpstatus code="204" />
 
 ### 获取所有置顶消息
 
-<api method="GET" path="/channels/{channelId}/pins" />
+<Api method="GET" path="/channels/{channelId}/pins" />
 
 获取所有置顶消息
 
@@ -428,7 +428,7 @@ HTTP 状态码：<httpstatus code="204" />
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="200" />
+HTTP 状态码：<HttpStatus code="200" />
 
 ```json
 [
@@ -464,23 +464,23 @@ HTTP 状态码：<httpstatus code="200" />
 
 ### 添加置顶消息
 
-<api method="PUT" path="/channels/{channelId}/pins/{messageId}" />
+<Api method="PUT" path="/channels/{channelId}/pins/{messageId}" />
 
 添加置顶消息
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ### 删除置顶消息
 
-<api method="DELETE" path="/channels/{channelId}/pins/{messageId}" />
+<Api method="DELETE" path="/channels/{channelId}/pins/{messageId}" />
 
 删除置顶消息
 
 #### 响应
 
-HTTP 状态码：<httpstatus code="204" />
+HTTP 状态码：<HttpStatus code="204" />
 
 ---
 
